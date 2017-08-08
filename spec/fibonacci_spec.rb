@@ -1,25 +1,21 @@
 require 'spec_helper.rb'
 
-RSpec.describe Fibonacci, type: :model do 
-  describe "recursive fibonacci sequence should work" do 
+RSpec.describe 'fibonacci methods' do 
+  describe "recursive_fib" do 
     it "should find the nth digit using recursion" do
-      input = 9
-      expected = 34
+        input = 9
+        expected = 34
 
-      rfib = Fibonacci.new(input)
-      rfib.recursive_fib
-      expect(rfib.num).to eq expected
+        rfib = recursive_fib(input)
+        expect(rfib).to eq expected
     end
-  end
 
-  describe "iterative fibonacci sequence should work" do 
+  describe "iterative_fib" do 
     it "should find the nth digit using iteration" do
-      input = 9
-      expected = 34
+        input = 9
+        expected = 34
 
-      ifib = Fibonacci.new(input)
-      ifib.iterative_fib
-      expect(ifib.num).to eq expected
+        ifib = iterative_fib(input)
+        expect(ifib).to eq expected
     end
-  end
 end
