@@ -15,7 +15,7 @@
       puts "input: #{input}, expected: #{expected}"
     end
 
-def recursive_fib(num)
+def iterative_fib(num)
 
   fib = Hash.new
   fib[0] = 0
@@ -28,13 +28,13 @@ def recursive_fib(num)
   return fib[num]
 end
 
-puts recursive_fib(0)
-puts recursive_fib(1)
-puts recursive_fib(2)
-puts recursive_fib(3)
-puts recursive_fib(4)
-puts recursive_fib(5)
-puts recursive_fib(6)
-puts recursive_fib(7)
-puts recursive_fib(8)
-puts recursive_fib(9)
+puts iterative_fib(0)
+puts iterative_fib(1)
+puts iterative_fib(2)
+puts iterative_fib(3)
+puts iterative_fib(4)
+puts iterative_fib(5)
+puts iterative_fib(6)
+puts iterative_fib(7)
+puts iterative_fib(8)
+puts iterative_fib(9)
