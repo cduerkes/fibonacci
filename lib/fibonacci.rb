@@ -3,8 +3,16 @@ def recursive_fib(num)
 end
 
 def iterative_fib(num)
-  #
-  return
+
+  fib = Hash.new
+  fib[0] = 0
+  fib[1] = 1
+
+  (2..num).each do |x|
+    fib[x] = fib[x - 1] + fib[x - 2]
+  end
+
+  return fib[num]
 end
 
 require 'benchmark'
