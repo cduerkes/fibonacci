@@ -1,6 +1,5 @@
 def recursive_fib(num)
-  #
-  return
+  return (num - 1) + (num - 2)
 end
 
 def iterative_fib(num)
